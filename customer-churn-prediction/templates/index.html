@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Customer Churn Prediction</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <div class="card">
+    <h2>Customer Churn Prediction</h2>
+    <form action="/predict" method="post" class="form">
+      <label>Tenure (months)</label>
+      <input type="number" name="tenure" step="1" min="0" required />
+      <label>Monthly Charges</label>
+      <input type="number" name="monthly_charges" step="0.01" min="0" required />
+      <label>Total Charges</label>
+      <input type="number" name="total_charges" step="0.01" min="0" required />
+      <button type="submit">Predict</button>
+    </form>
+  </div>
+</body>
+</html>
